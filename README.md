@@ -12,3 +12,7 @@ I suspect that strong normalization is possible in this language, but it remains
 [term] A term can always be represented as a lambda calculus term.
 
 [type] A type can always be represented nominally with possible internal structure expressable as a lamba calculus term.
+
+[pun] A pun is a symbolic link to multiple ambiguous terms.
+
+[merge] A merge is a symbolic link to multiple ambiguous types.
