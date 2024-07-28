@@ -13,6 +13,10 @@ I suspect that strong normalization is possible in this language, but it remains
 
 [type] A type can always be represented nominally with possible internal structure expressable as a lamba calculus term.
 
-[pun] A pun is a symbolic link to multiple ambiguous terms.
+[split] A split is a symbolic link to multiple ambiguous terms. Any term position that accepts a Term must accept a Split.
 
-[merge] A merge is a symbolic link to multiple ambiguous types.
+[join] A join is a symbolic link to multiple ambiguous types. Any type position that accepts a Type must accept a Join.
+
+[goal] A goal is an objective to minimize or maximize a metric produced from some Terms and Types.
+
+[relation] A relation is a property of comparison of some Terms and Types.
