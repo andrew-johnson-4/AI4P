@@ -20,3 +20,5 @@ I suspect that strong normalization is possible in this language, but it remains
 [goal] A goal is an objective to minimize or maximize a metric produced from some Terms and Types.
 
 [relation] A relation is a property of comparison of some Terms and Types.
+
+### Example
