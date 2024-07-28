@@ -10,4 +10,5 @@ I suspect that strong normalization is possible in this language, but it remains
 ### Language Specification
 
 [term] A term can always be represented as a lambda calculus term.
+
 [type] A type can always be represented nominally with possible internal structure expressable as a lamba calculus term.
