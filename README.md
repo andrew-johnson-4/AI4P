@@ -16,11 +16,11 @@ A Term can always be represented as a lambda calculus term.
 A Type can always be represented nominally with possible internal structure expressable as a lamba calculus term.
 
 [Split]
-A Split is a symbolic link to multiple ambiguous terms.
+A Split is a symbolic link to multiple ambiguous Terms.
 Any Term position that accepts a Term must accept a Split.
 
 [Join]
-A Join is a symbolic link to multiple ambiguous types.
+A Join is a symbolic link to multiple ambiguous Types.
 Any Type position that accepts a Type must accept a Join.
 
 [Goal]
@@ -30,5 +30,10 @@ A Goal is an objective to minimize or maximize a metric produced from some Terms
 A relation is a property of comparison of some Terms and Types.
 A relation is considered a Boolean Term even though it may reference both Terms AND Types.
 Any Term position that accepts a Boolean Term must accept a Relation.
+
+### Constraints
+
+There are some constraints on what constitutes a well-formed language program:
+* all Split Terms are explicitly ascripted with a Type.
 
 ### Example
