@@ -9,16 +9,26 @@ I suspect that strong normalization is possible in this language, but it remains
 
 ### Language Specification
 
-[term] A term can always be represented as a lambda calculus term.
+[Term]
+A Term can always be represented as a lambda calculus term.
 
-[type] A type can always be represented nominally with possible internal structure expressable as a lamba calculus term.
+[Type]
+A Type can always be represented nominally with possible internal structure expressable as a lamba calculus term.
 
-[split] A split is a symbolic link to multiple ambiguous terms. Any term position that accepts a Term must accept a Split.
+[Split]
+A Split is a symbolic link to multiple ambiguous terms.
+Any Term position that accepts a Term must accept a Split.
 
-[join] A join is a symbolic link to multiple ambiguous types. Any type position that accepts a Type must accept a Join.
+[Join]
+A Join is a symbolic link to multiple ambiguous types.
+Any Type position that accepts a Type must accept a Join.
 
-[goal] A goal is an objective to minimize or maximize a metric produced from some Terms and Types.
+[Goal]
+A Goal is an objective to minimize or maximize a metric produced from some Terms and Types.
 
-[relation] A relation is a property of comparison of some Terms and Types.
+[Relation]
+A relation is a property of comparison of some Terms and Types.
+A relation is considered a Boolean Term even though it may reference both Terms AND Types.
+Any Term position that accepts a Boolean Term must accept a Relation.
 
 ### Example
