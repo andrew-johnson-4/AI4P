@@ -14,6 +14,7 @@ A Term can always be represented as a lambda calculus term.
 
 [Type]
 A Type can always be represented nominally with possible internal structure expressable as a lambda calculus term.
+Types can be viewed as ordinals or literal strings etc, so these Types are equivalent to types in Simply Typed Lambda Calculus.
 
 [Split]
 A Split is a symbolic link to multiple ambiguous Terms.
