@@ -13,7 +13,7 @@ I suspect that strong normalization is possible in this language, but it remains
 A Term can always be represented as a lambda calculus term.
 
 [Type]
-A Type can always be represented nominally with possible internal structure expressable as a lamba calculus term.
+A Type can always be represented nominally with possible internal structure expressable as a lambda calculus term.
 
 [Split]
 A Split is a symbolic link to multiple ambiguous Terms.
