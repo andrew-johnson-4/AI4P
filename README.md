@@ -36,7 +36,7 @@ Any Term position that accepts a Boolean Term must accept a Relation.
 ### Constraints
 
 There are some constraints on what constitutes a well-formed language program:
-* all Split Terms are explicitly ascripted with a Type.
+* Each individual Term in a Split is explicitly ascripted with a Type.
 
 There may be additional constraints added to reach strong normalization, but for now I am just considering the shape of the most general problem.
 
