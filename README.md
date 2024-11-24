@@ -37,6 +37,7 @@ Any Term position that accepts a Boolean Term must accept a Relation.
 
 There are some constraints on what constitutes a well-formed language program:
 * Each individual Term in a Split is explicitly ascripted with a Type.
+* Join Reduction (is only meant to add ad-hoc polymorphism, but there may be other reductions)
 
 There may be additional constraints added to reach strong normalization, but for now I am just considering the shape of the most general problem.
 
