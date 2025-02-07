@@ -49,4 +49,35 @@ The following algorithm has been discovered as effective to bring this inference
 
 <img src="https://raw.githubusercontent.com/andrew-johnson-4/AI4P/refs/heads/main/3bfc1198-5ee5-44ce-a252-518befdd4fda_700x700.webp">
 
+To read this diagram, the left and the right are both state machines, having a "position" at one of the nodes at any given time.
+To use this during inference the following information is tracked:
 
+* Current location (t) + embedding
+* Previous location (t-1) + embedding
+
+Then the inference tries to predict the best embedding to move towards.
+An embedding is a single step of natural induction.
+Each embedding can be classified by the existence of logic matching its given color.
+
+| name       | descriptive name             | definition
+|------------|------------------------------|--------------------------
+| black circle     | term                             | a
+| black	line       | term                             | a(b)
+| white circle     | type                             | B
+| white	line     | type                               | A->B
+| yellow circle    | join                             |	let a: A; let b: A
+| yellow line    | join                               |	let f: A->C; let f: B->C
+| orange circle    | split                            |	let a: A; let a: B
+| orange line    | split                              |	let f: A->B; let f: A->C
+| red circle       | less                             |	≤
+| red line       | less                               |	≤
+| blue circle      | more                             |	≥
+| blue line	     | more                               | ≥
+| purple circle    | up                               |	+
+| purple line    | up                                 |	+
+| green	circle     | down                             |	-
+| green	line     | down                               |	-
+| pink circle     | parallel                          |	\|\|
+| pink line	     | parallel                           |	\|\|
+| grey circle	     | perpendicular                    |	⊥
+| grey line	     | perpendicular                      |	⊥
