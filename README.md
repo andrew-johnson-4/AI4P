@@ -42,3 +42,11 @@ There are some constraints on what constitutes a well-formed language program:
 There may be additional constraints added to reach strong normalization, but for now I am just considering the shape of the most general problem.
 
 ### Example
+
+There have been several attempts so far to implement languages with the above feature set.
+Type inference in these languages does seem to be strongly normalizing, but in practice the inference is often intractable.
+The following algorithm has been discovered as effective to bring this inference in line with expectations for runtime efficiency.
+
+<img src="https://raw.githubusercontent.com/andrew-johnson-4/AI4P/refs/heads/main/3bfc1198-5ee5-44ce-a252-518befdd4fda_700x700.webp">
+
+
