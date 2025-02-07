@@ -59,6 +59,8 @@ Then the inference tries to predict the best embedding to move towards.
 An embedding is a single step of natural induction.
 Each embedding can be classified by the existence of logic matching its given color.
 
+Depending on the algorithm used, inference may fail, and back-tracking can be used to reground the state.
+
 | name       | descriptive name             | definition
 |------------|------------------------------|--------------------------
 | black circle     | term                             | a
