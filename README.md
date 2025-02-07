@@ -57,9 +57,10 @@ To use this during inference the following information is tracked:
 
 Then the inference tries to predict the best embedding to move towards.
 An embedding is a single step of natural induction.
-Each embedding can be classified by the existence of logic matching its given color.
-
+Each color is assigned by the inference algorithm and can be used to explore a high-dimensional space.
 Depending on the algorithm used, inference may fail, and back-tracking can be used to reground the state.
+
+Here is an embedding from one particular inference algorithm.
 
 | name       | descriptive name             | definition
 |------------|------------------------------|--------------------------
