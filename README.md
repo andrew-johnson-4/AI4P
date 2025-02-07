@@ -84,3 +84,5 @@ Here is an embedding from one particular inference algorithm.
 | pink line	     | parallel                           |	\|\|
 | grey circle	     | perpendicular                    |	⊥
 | grey line	     | perpendicular                      |	⊥
+
+This embedding only uses 10 colors. So the state machine is customizable, although there tends to be overlap.
