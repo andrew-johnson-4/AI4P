@@ -122,6 +122,20 @@ Third, once an intermediate objective has been reached, the cost to start from t
 
 > If a lemma is true, then the lemma is free.
 
+### Complex Conjugates
+
+Conjugates can potentially reference multiple nodes, so the path weight is the minimum weight from any node across all colors: `P<a,b> = min(a + d1,  b + d2)`.
+
+### Weights and Biases
+
+In practice weights may be naturally non-linear, which is fine.
+Learning optimal path weights may be complex.
+
+### Performance
+
+Once LSTS is sophisticated enough to integrate this method we should have some hard numbers for performance.
+Until then this is just an unproven idea.
+
 ### Other domains
 
 This 12 color layout works well for LSTS, but maybe isn't the best for all domains.
