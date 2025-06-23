@@ -122,5 +122,8 @@ Third, once an intermediate objective has been reached, the cost to start from t
 
 > If a lemma is true, then the lemma is free.
 
+### Other domains
 
+This 12 color layout works well for LSTS, but maybe isn't the best for all domains.
+The inference algorithm can easily be expanded to a generic N color space if path scoring is provided.
 
