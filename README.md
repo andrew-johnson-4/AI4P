@@ -111,10 +111,12 @@ if it is followed in the body with an orange pun with 2 options, the cumulative 
 Conditional or looped paths are accounted for additively.
 So an if statement with 1red on the truthy path, and 2blue on the falsy path, would get a cumulative path weight of 1red 2blue.
 
-Second, the frontier is cost minimized to search.
+Second, the frontier is cost minimized to search by minimum color.
 A new path segment that does not expand the frontier max color is marginally free.
 Max color is a single color weight of the maximum for each color across the entire frontier.
 A new path segment that does expand the frontier max color has a cost equal to the new delta.
+The frontier is expanded to minimize the maximum color value across all colors.
+If one inference rule would expand to 3yellow and another would expand to 4orange, then the 3yellow is chosen first.
 
 Third, once an intermediate objective has been reached, the cost to start from that node is reset to zero.
 
