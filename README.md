@@ -89,7 +89,7 @@ This embedding only uses 10 colors. So the state machine is customizable, althou
 
 ### Fast Inference vs Strong Inference
 
-Fast Inference is works on an embedding that can fit into a variety of domains.
+Fast Inference works on an embedding that can fit into a variety of domains.
 One such domain is the Strong Inference from LSTS.
 So Fast Inference can work as a sophisticated driver for automated theorem proving in LSTS.
 
