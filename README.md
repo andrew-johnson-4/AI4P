@@ -86,3 +86,39 @@ Here is an embedding from one particular inference algorithm.
 | grey line	     | perpendicular                      |	⊥
 
 This embedding only uses 10 colors. So the state machine is customizable, although there tends to be overlap.
+
+### Fast Inference vs Strong Inference
+
+Fast Inference is works on an embedding that can fit into a variety of domains.
+One such domain is the Strong Inference from LSTS.
+So Fast Inference can work as a sophisticated driver for automated theorem proving in LSTS.
+
+If Strong Inference is the bones, then Fast Inference is the muscle.
+
+### LSTS example
+
+Fast Inference works by coloring a frontier of potential inference rules to seek a balanced search space.
+FI can be thought of as an intelligently weighted cost minimized search using Dijkstra's algorithm to expand the frontier.
+
+First, the cost of inference rules is calculated.
+Each inference is colored by it's internal path weight.
+Path weight is calculated by the weight and color of each inference.
+Sequenced inference is accounted for additively.
+
+For example, a yellow pun with 3 options will get the color: 3yellow.
+if it is followed in the body with an orange pun with 2 options, the cumulative weight would be: 3yellow 2orange.
+
+Conditional or looped paths are accounted for additively.
+So an if statement with 1red on the truthy path, and 2blue on the falsy path, would get a cumulative path weight of 1red 2blue.
+
+Second, the frontier is cost minimized to search.
+A new path segment that does not expand the frontier max color is marginally free.
+Max color is a single color weight of the maximum for each color across the entire frontier.
+A new path segment that does expand the frontier max color has a cost equal to the new delta.
+
+Third, once an intermediate objective has been reached, the cost to start from that node is reset to zero.
+
+> If a lemma is true, then the lemma is free.
+
+
+
