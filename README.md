@@ -133,7 +133,7 @@ Learning optimal path weights may be complex.
 
 ### Performance
 
-Once LSTS is sophisticated enough to integrate this method we should have some hard numbers for performance.
+Once LSTS is sophisticated enough to integrate this method then we will get some hard numbers for performance.
 Until then this is just an unproven idea.
 
 ### Other domains
