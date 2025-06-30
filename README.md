@@ -141,3 +141,7 @@ Until then this is just an unproven idea.
 This 12 color layout works well for LSTS, but maybe isn't the best for all domains.
 The inference algorithm can easily be expanded to a generic N color space if path scoring is provided.
 
+### Heuristic Explanation
+
+This search algorithm naturally penalizes infinite loops and other repetitive behavior while still allowing the search to "finish its thought."
+
